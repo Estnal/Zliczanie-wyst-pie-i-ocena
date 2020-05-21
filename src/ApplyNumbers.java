@@ -23,10 +23,13 @@ public class ApplyNumbers {
     private static int countOccurences(List<Integer> allnumbers, int number) {
         int occurences = 0;
         for (Integer n : allnumbers) {
-            if (number == n) ;
-            occurences++;
+            if (number == n) {
+                occurences++;
+            }
+            return occurences;
+
         }
-        return occurences;
+
     }
 
     private static List<Integer> readnumbersFromFile(String filename) throws FileNotFoundException {
