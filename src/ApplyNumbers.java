@@ -7,7 +7,7 @@ public class ApplyNumbers {
         try {
             List<Integer> allNumbers = readnumbersFromFile("numbers.txt");
             printUnique(allNumbers);
-        } catch (FileNotFoundException exception) {
+        } catch (FileNotFoundException ex) {
             System.out.println("Brak pliku liczby.txt");
         }
 
